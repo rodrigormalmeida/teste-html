@@ -84,7 +84,7 @@
     <label for="nome">Nome: </label>
    </td>
    <td align="left">
-    <input type="text" name="email">
+    <input type="text" name="nome">
    </td>
    <td>
     <label for="sobrenome">Sobrenome: </label>
@@ -199,6 +199,12 @@
    <td align="left">
     <input type="text" name="email">
    </td>
+   <td>
+   <label for="telefone">Celular: </label>
+   </td>
+   <td align="left">
+   <input type="text" name="telefone">
+  </td>
   </tr>
   <tr>
    <td>
@@ -206,7 +212,6 @@
    </td>
    <td>
     <input type="file" name="imagem" >
-
    </td>
   </tr>
   <tr>
