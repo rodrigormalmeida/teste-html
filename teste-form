@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+ <title> Teste de admissão </title>
+ <meta name="description" content="Desenvolvido em html">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Javascript -->
+    <script>
+    
+    function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('rua').value=("");
+            document.getElementById('bairro').value=("");
+            document.getElementById('cidade').value=("");
+            document.getElementById('uf').value=("");
+    }
+
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('rua').value=(conteudo.logradouro);
+            document.getElementById('bairro').value=(conteudo.bairro);
+            document.getElementById('cidade').value=(conteudo.localidade);
+            document.getElementById('uf').value=(conteudo.uf);
+        } //end if.
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacep(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('rua').value="...";
+                document.getElementById('bairro').value="...";
+                document.getElementById('cidade').value="...";
+                document.getElementById('uf').value="...";
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } //end if.
+            else {
+                //cep é inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        } //end if.
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    };
+
+    </script>
+ </head>
+
+ <body>
+  <h1> Bem vindo ao teste HTML</h1>
+  <h2> Preencha o formulário abaixo para se cadastrar </h2><br>
+
+<form action="." method="post">
+
+<!-- DADOS PESSOAIS-->
+<fieldset>
+ <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="sobrenome">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+
+<br />
+
+<!-- ENDEREÇO -->
+<fieldset>
+ <legend>Dados de Endereço</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+	</td>
+<td align="left">
+<input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);" /></label><br />
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td align="left">
+    <input name="rua" type="text" id="rua" size="60" /></label><br />
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+     <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="uf">Estado:</label>
+   </td>
+   <td align="left">
+    <input name="uf" type="text" id="uf" size="2" /></label><br />
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+
+<!-- DADOS DE LOGIN -->
+<fieldset>
+ <legend>Dados de login</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="email">E-mail: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="imagem">Imagem de perfil:</label>
+   </td>
+   <td>
+    <input type="file" name="imagem" >
+
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="login">Login de usuário: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="login">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="pass">Senha: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="pass">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="passconfirm">Confirme a senha: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="passconfirm">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+<input type="submit">
+<input type="reset" value="Limpar">
+</form>
+<br />
+
+<p align="center">Desenvolvido por Rodrigo - 2022</p>
+
+ </body>
+</html>
