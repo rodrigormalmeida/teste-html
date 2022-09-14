@@ -1,0 +1,587 @@
+  /* body */
+
+      background-color: #303030;
+   
+  /* Tela de Cadastro */
+  
+  position: relative;
+  width: 1440px;
+  height: 1645px;
+  
+  background: #384B56;
+  
+    /* NavBar */
+    
+    position: absolute;
+    width: 1440px;
+    height: 115px;
+    left: calc(50% - 1440px / 2);
+    top: 0px;
+    
+    background: #405d6d;
+    border-bottom: 5px solid #33c5f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+    /* Tela Inicial */
+  
+    position: absolute;
+    left: 50.14%;
+    right: 36.18%;
+    top: 31.3%;
+    bottom: 24.35%;
+    
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+  
+    /* Ofertas */
+  
+    position: absolute;
+    left: 81.67%;
+    right: 4.65%;
+    top: 31.3%;
+    bottom: 24.35%;
+    
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+  
+    /* Produtos */
+  
+    position: absolute;
+    left: 65.9%;
+    right: 20.42%;
+    top: 31.3%;
+    bottom: 24.35%;
+    
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+  
+    /* thothmarket */
+    
+    position: absolute;
+    left: 8.33%;
+    right: 73.19%;
+    top: 20.87%;
+    bottom: 24.35%;
+    
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #33C5F3;
+  
+    /* div */
+    
+    position: absolute;
+    left: 8.33%;
+    right: 8.33%;
+    top: 8.39%;
+    bottom: 6.69%;
+    
+    background: #405D6D;
+    border-radius: 10px;
+  
+    /* Botão */
+  
+  position: absolute;
+  width: 240px;
+  height: 72px;
+  left: 480px;
+  top: 1252px;
+  
+  background: #5399AE;
+  border-radius: 10px;
+  
+  /* Cadastrar-se */
+  
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: rgba(255, 255, 255, 0.4);
+  
+  /* Endereço */
+  
+  position: absolute;
+  left: 29.17%;
+  right: 29.17%;
+  top: 47.89%;
+  bottom: 48.46%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+  
+  /* Cidade */
+  
+  position: absolute;
+  left: 51.67%;
+  right: 6.67%;
+  top: 74.02%;
+  bottom: 22.33%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Complemento */
+  
+  position: absolute;
+  left: 51.67%;
+  right: 6.67%;
+  top: 63.85%;
+  bottom: 32.5%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Logradouro */
+  
+  position: absolute;
+  left: 51.67%;
+  right: 6.67%;
+  top: 53.69%;
+  bottom: 42.66%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Confirmar Senha */
+  
+  position: absolute;
+  left: 51.67%;
+  right: 6.67%;
+  top: 35.58%;
+  bottom: 60.77%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* E-mail */
+  
+  position: absolute;
+  left: 51.67%;
+  right: 6.67%;
+  top: 25.41%;
+  bottom: 70.94%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* CPF */
+  
+  position: absolute;
+  left: 51.67%;
+  right: 6.67%;
+  top: 15.25%;
+  bottom: 81.1%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Sobrenome */
+  
+  position: absolute;
+  left: 51.67%;
+  right: 6.67%;
+  top: 5.08%;
+  bottom: 91.27%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Bairro */
+  
+  position: absolute;
+  left: 6.67%;
+  right: 51.67%;
+  top: 74.02%;
+  bottom: 22.33%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Número */
+  
+  position: absolute;
+  left: 6.67%;
+  right: 51.67%;
+  top: 63.85%;
+  bottom: 32.5%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* CEP */
+  
+  position: absolute;
+  left: 6.67%;
+  right: 51.67%;
+  top: 53.69%;
+  bottom: 42.66%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Senha */
+  
+  position: absolute;
+  left: 6.67%;
+  right: 51.67%;
+  top: 35.58%;
+  bottom: 60.77%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Telefone */
+  
+  position: absolute;
+  left: 6.67%;
+  right: 51.67%;
+  top: 25.41%;
+  bottom: 70.94%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Data de Nascimento */
+  
+  position: absolute;
+  left: 6.67%;
+  right: 51.67%;
+  top: 15.25%;
+  bottom: 81.1%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Nome */
+  
+  position: absolute;
+  left: 6.67%;
+  right: 51.67%;
+  top: 5.08%;
+  bottom: 91.27%;
+  
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+  
+  color: #FFFFFF;
+  
+  /* Campo de Cidade */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 620px;
+  top: 1085px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Complemento */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 620px;
+  top: 943px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Logradouro */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 620px;
+  top: 801px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Confirmar Senha */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 620px;
+  top: 548px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de E-mail */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 620px;
+  top: 406px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de CPF */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 620px;
+  top: 264px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Sobrenome */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 620px;
+  top: 122px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Bairro */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 80px;
+  top: 1085px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Numero */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 80px;
+  top: 943px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  * Campo de CEP */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 80px;
+  top: 801px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Senha */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 80px;
+  top: 548px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Telefone */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 80px;
+  top: 406px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Campo de Data de Nascimento */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 80px;
+  top: 264px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  /* Icone Calendario */
+  
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  right: 15px;
+  top: 15px;
+  
+  /* Campo de Nome */
+  
+  position: absolute;
+  width: 500px;
+  height: 61px;
+  left: 80px;
+  top: 122px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
