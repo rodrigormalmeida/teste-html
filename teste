@@ -5,6 +5,7 @@
  <title> Teste de admissão </title>
  <meta name="description" content="Desenvolvido em html">
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <link href="styles.css" rel="stylesheet" />
 
     <!-- Javascript -->
     <script>
@@ -70,10 +71,23 @@
  </head>
 
  <body>
-  <h1> Bem vindo ao teste HTML</h1>
-  <h2> Preencha o formulário abaixo para se cadastrar </h2><br>
-
 <form action="." method="post">
+  <fieldset>
+
+    <!-- HEADER-->
+
+    <fieldset>
+      <nav>
+      <img src=logo.png>
+      <table align=right>
+      <td align=right>
+      <input type="button" value=Teste>
+      <input type="button" value=Teste1>
+      </td>
+      </table>
+    </nav>
+    </fieldset>  
+
 
 <!-- DADOS PESSOAIS-->
 <fieldset>
@@ -241,12 +255,18 @@
  </table>
 </fieldset>
 <br />
+<table align=center>
+  <td>
 <input type="submit">
 <input type="reset" value="Limpar">
+  </td>
+</table>
 </form>
 <br />
 
+<footer>
 <p align="center">Desenvolvido por Rodrigo - 2022</p>
-
+</footer>
+</fieldset>
  </body>
 </html>
