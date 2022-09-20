@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+<html class=fullscreen lang=“pt-br”>
 
-<html>
  <head>
  <title> Teste de admissão </title>
  <meta name="description" content="Desenvolvido em html">
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <link href="styles.css" rel="stylesheet" />
+ <link type=text/css href="styles.css" rel="stylesheet" />
 
     <!-- Javascript -->
     <script>
@@ -15,8 +15,7 @@
             document.getElementById('rua').value=("");
             document.getElementById('bairro').value=("");
             document.getElementById('cidade').value=("");
-            document.getElementById('uf').value=("");
-    }
+}
 
     function meu_callback(conteudo) {
         if (!("erro" in conteudo)) {
@@ -24,8 +23,7 @@
             document.getElementById('rua').value=(conteudo.logradouro);
             document.getElementById('bairro').value=(conteudo.bairro);
             document.getElementById('cidade').value=(conteudo.localidade);
-            document.getElementById('uf').value=(conteudo.uf);
-        }
+}
         else {
 
             limpa_formulário_cep();
@@ -46,7 +44,6 @@
                 document.getElementById('rua').value="...";
                 document.getElementById('bairro').value="...";
                 document.getElementById('cidade').value="...";
-                document.getElementById('uf').value="...";
 
                 var script = document.createElement('script');
 
@@ -73,35 +70,36 @@
  <body>
 <form action="." method="post">
   <fieldset>
-
+      
     <!-- HEADER-->
 
-    <fieldset>
-      <nav>
-      <img src=logo.png>
-      <table align=right>
-      <td align=right>
-      <input type="button" value=Teste>
-      <input type="button" value=Teste1>
-      </td>
-      </table>
-    </nav>
-    </fieldset>  
-
-
+    <navbar>      
+    <table>
+    <tr>
+    <div id="navbar">
+          <img align=left src=#logo>
+          <td id="ofertas">
+          <input type="button" value=Ofertas>
+        </td>
+          <td id="produtos">
+          <input type="button" value=Produtos>
+          </td>
+          </div>
+    </navbar>
+    <div id="div"></div>
+              
 <!-- DADOS PESSOAIS-->
-<fieldset>
- <legend>Dados Pessoais</legend>
- <table cellspacing="10">
+
+  <table cellspacing="10">
   <tr>
-   <td>
+   <td col=1>
     <label for="nome">Nome: </label>
    </td>
-   <td align="left">
+   <td col=2 align=left>
     <input type="text" name="nome">
    </td>
-   <td>
-    <label for="sobrenome">Sobrenome: </label>
+   <td align=left>
+   <label for="sobrenome">Sobrenome: </label>
    </td>
    <td align="left">
     <input type="text" name="sobrenome">
@@ -119,29 +117,14 @@
   </tr>
   <tr>
    <td>
-    <label for="rg">RG: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="rg" size="13" maxlength="13"> 
-   </td>
-  </tr>
-  <tr>
-   <td>
     <label>CPF:</label>
    </td>
    <td align="left">
     <input type="text" name="cpf" size="11" maxlength="11"> - <input type="text" name="cpf2" size="2" maxlength="2">
    </td>
   </tr>
- </table>
-</fieldset>
-
-<br />
-
+  
 <!-- ENDEREÇO -->
-<fieldset>
- <legend>Dados de Endereço</legend>
- <table cellspacing="10">
 
   <tr>
    <td>
@@ -154,7 +137,7 @@
   </tr>
   <tr>
    <td>
-    <label for="rua">Rua:</label>
+    <label for="rua">Endereço:</label>
    </td>
    <td align="left">
     <input name="rua" type="text" id="rua" size="60" /><br />
@@ -184,28 +167,17 @@
   </tr>
   <tr>
    <td>
-    <label for="uf">Estado:</label>
-   </td>
-   <td align="left">
-    <input name="uf" type="text" id="uf" size="2" /><br />
-   </td>
-  </tr>
-  <tr>
-   <td>
     <label for="cidade">Cidade: </label>
    </td>
    <td align="left">
     <input name="cidade" type="text" id="cidade" size="40" /><br />
    </td>
-  </tr>
+   </tr>
  </table>
-</fieldset>
-<br />
 
 <!-- DADOS DE LOGIN -->
-<fieldset>
- <legend>Dados de login</legend>
- <table cellspacing="10">
+
+<table cellspacing="10">
   <tr>
    <td>
     <label for="email">E-mail: </label>
@@ -222,37 +194,19 @@
   </tr>
   <tr>
    <td>
-    <label for="imagem">Imagem de perfil:</label>
-   </td>
-   <td>
-    <input type="file" name="imagem" >
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label for="login">Login de usuário: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="login">
-   </td>
-  </tr>
-  <tr>
-   <td>
     <label for="pass">Senha: </label>
    </td>
    <td align="left">
     <input type="password" name="pass">
    </td>
-  </tr>
-  <tr>
    <td>
-    <label for="passconfirm">Confirme a senha: </label>
-   </td>
-   <td align="left">
-    <input type="password" name="passconfirm">
-   </td>
+   <label for="passconfirm">Confirme a senha: </label>
+  </td>
+  <td align="left">
+   <input type="password" name="passconfirm">
+  </td>
   </tr>
- </table>
+  </table>
 </fieldset>
 <br />
 <table align=center>
@@ -265,8 +219,8 @@
 <br />
 
 <footer>
-<p align="center">Desenvolvido por Rodrigo - 2022</p>
+<p align="center">Desenvolvido em Stackblitz por Rodrigo - 2022</p>
 </footer>
 </fieldset>
- </body>
+</body>
 </html>
